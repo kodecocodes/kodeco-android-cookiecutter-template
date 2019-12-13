@@ -1,7 +1,5 @@
 # ANDROID TUTORIAL, TEMPLATE APP PROJECT
 
-[Switch to pre-androidx branch](https://github.com/raywenderlich/{{ cookiecutter.repo_name }}/tree/pre_androidx)
-
 ## SUMMARY
 
 This project is a barebones Android Studio project that implements the code style and formatting standards for raywenderlich.com Android Tutorial Sample Projects.
@@ -18,9 +16,7 @@ The items implemented are:
 
 ## HOW TO USE THE TEMPLATE APP PROJECT
 
-Download {{ cookiecutter.repo_name }}.zip from this repository and use that. Tutorial sample projects should not include a git repo, so _please do not_ clone this repo and then start making modifications as the sample project. 
-
-After downloading and unzipping the template project, you need to make a few edits and also set up your Code Style.
+You need to make a few edits and also set up your Code Style.
 
 ### ANDROID STUDIO CODE STYLE
 
@@ -67,10 +63,38 @@ Several pieces should be changed to unique values such that they are relevant to
 
 - Go to the root of the project folder and delete `img` folder (this contains images which are shown here in the README.md and are not necessary in your tutorial.)
 
-- Refactor the package name to match the sample app you are building (Instructions on how to do this [here](https://stackoverflow.com/questions/16804093/android-studio-rename-package)).
-
 - Change the colors in `colors.xml` to whatever you want for your tutorial, however, you are encouraged to use the RW Color Scheme in this project unless your tutorial specifically needs to use something else.
 
-- Rename the top-level directory to match your sample project name
-
 - If you are planning to use git and GitHub to manage your sample project development, be sure to start with the .gitignore file on the Android Team Guide [here](https://www.raywenderlich.com/tutorial-team/android-team-guide). However, don't forget that once done, you sill need to package the Sample App (both starter and final) in a zip file that does not include any GIT artifacts!
+
+## License
+
+```
+Copyright (c) 2019 Razeware LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
+distribute, sublicense, create a derivative work, and/or sell copies of the
+Software in any work that is designed, intended, or marketed for pedagogical or
+instructional purposes related to programming, coding, application development,
+or information technology.  Permission for such use, copying, modification,
+merger, publication, distribution, sublicensing, creation of derivative works,
+or sale is expressly withheld.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```

@@ -4,24 +4,62 @@ A [cookiecutter](https://github.com/cookiecutter/cookiecutter) :cookie: template
 
 ## Usage
 
-Install cookiecutter (via homebrew on mac/linux):
+1. Install cookiecutter (via homebrew on mac/linux):
 
-```bash
-brew install cookiecutter
+    ```bash
+    brew install cookiecutter
+    ```
+
+1. Clone this repository
+    - using `https`
+        ```bash
+        git clone https://github.com/raywenderlich/rw-android-cookiecutter-template
+        ```
+
+    - using `ssh`
+        ```bash
+        git clone git@github.com:raywenderlich/rw-android-cookiecutter-template.git
+        ```
+
+1. Run cookiecutter tool by passing in the template directory as an argument:
+
+    ```bash
+    cookiecutter rw-android-cookiecutter-template/
+    ```
+
+4. You'll be prompted for various configuration options - see [`cookiecutter.json`](/cookiecutter.json) for the full list. 
+
+    To accept the configuration option you see in brackets, simply hit Enter↵
+
+
+## License
+
 ```
-Clone this repository
+Copyright (c) 2019 Razeware LLC
 
-```bash
-git clone https://github.com/raywenderlich/rw-android-cookiecutter-template
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
+distribute, sublicense, create a derivative work, and/or sell copies of the
+Software in any work that is designed, intended, or marketed for pedagogical or
+instructional purposes related to programming, coding, application development,
+or information technology.  Permission for such use, copying, modification,
+merger, publication, distribution, sublicensing, creation of derivative works,
+or sale is expressly withheld.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 ```
-
-Run cookiecutter tool by passing in the template directory as an argument:
-
-```bash
-cookiecutter rw-android-cookiecutter-template/
-```
-
-You'll be prompted for various configuration options - see [`cookiecutter.json`](/cookiecutter.json) for the full list. 
-
-To accept the configuration option you see in brackets, simply hit Enter↵
-

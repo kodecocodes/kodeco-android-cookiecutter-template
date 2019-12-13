@@ -31,6 +31,9 @@ A [cookiecutter](https://github.com/cookiecutter/cookiecutter) :cookie: template
 
     To accept the configuration option you see in brackets, simply hit Enter↵
 
+    This should look something like below:
+    ![screenshot](screenshot.png)
+
 
 ## License
 

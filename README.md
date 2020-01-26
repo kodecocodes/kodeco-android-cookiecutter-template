@@ -4,14 +4,28 @@ A [cookiecutter](https://github.com/cookiecutter/cookiecutter) :cookie: template
 
 ## Usage
 
-1. Install cookiecutter (via homebrew on mac/linux):
+#### Step 1
 
-    ```bash
-    brew install cookiecutter
+Install cookiecutter (via homebrew on mac/linux):
+
+```bash
+brew install cookiecutter
+```
+
+#### Step 2
+
+Assuming you have `git` installed, there are two ways you can setup/configure the RW Android Tutorial App (Choose one):
+
+1. Directly via `cookiecutter`. 
+
+    Simply execute the below one-liner command in your terminal.
     ```
+    cookiecutter gh:raywenderlich/rw-android-cookiecutter-template
+    ````
+1. Via cloning this repository
 
-1. Clone this repository
     - using `https`
+
         ```bash
         git clone https://github.com/raywenderlich/rw-android-cookiecutter-template
         ```
@@ -21,19 +35,19 @@ A [cookiecutter](https://github.com/cookiecutter/cookiecutter) :cookie: template
         git clone git@github.com:raywenderlich/rw-android-cookiecutter-template.git
         ```
 
-1. Run cookiecutter tool by passing in the template directory as an argument:
+    When done, run `cookiecutter` tool by passing in the template directory as an argument:
 
     ```bash
     cookiecutter rw-android-cookiecutter-template/
     ```
+#### Step 3
 
-4. You'll be prompted for various configuration options - see [`cookiecutter.json`](/cookiecutter.json) for the full list. 
+Next you'll be prompted for various configuration options - see [`cookiecutter.json`](/cookiecutter.json) for the full list.
 
-    To accept the configuration option you see in brackets, simply hit Enter↵
+To accept the configuration option you see in brackets, simply hit Enter↵ or if you want to modify it then give it a correct value and that will be applied to the project.
 
-    The process would look something like below:
-    ![screenshot](screenshot.png)
-
+The process would look something like below:
+![screenshot](screenshot.png)
 
 ## License
 

@@ -55,11 +55,18 @@ fastlane/test_output
 fastlane/readme.md
 
 # Custom
-
-.DS_Store
 .idea/vcs.xml
 .idea/misc.xml
 .idea/modules.xml
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # IDEA/Android Studio ignores
 *.iml
@@ -76,3 +83,20 @@ fastlane/readme.md
 !/.idea/encodings.xml
 !/.idea/copyright/
 !/.idea/compiler.xml
+
+### AndroidStudio Patch ###
+
+!/gradle/wrapper/gradle-wrapper.jar
+
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries

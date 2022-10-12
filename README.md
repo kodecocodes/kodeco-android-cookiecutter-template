@@ -1,6 +1,6 @@
-# RW Android Tutorial App Bootstrapping Template
+# Kodeco Android Tutorial App Bootstrapping Template
 
-A [cookiecutter](https://github.com/cookiecutter/cookiecutter) :cookie: template for bootstrapping new Android Tutorial projects for raywenderlich.com!
+A [cookiecutter](https://github.com/cookiecutter/cookiecutter) :cookie: template for bootstrapping new Android Tutorial projects for kodeco.com!
 
 ## Usage
 
@@ -14,31 +14,31 @@ brew install cookiecutter
 
 #### Step 2
 
-Assuming you have `git` installed, there are two ways you can setup/configure the RW Android Tutorial App (Choose one):
+Assuming you have `git` installed, there are two ways you can setup/configure the Kodeco Android Tutorial App (Choose one):
 
-1. Directly via `cookiecutter`. 
+1. Directly via `cookiecutter`.
 
-    Simply execute the below one-liner command in your terminal.
+   Simply execute the below one-liner command in your terminal.
     ```
-    cookiecutter gh:raywenderlich/rw-android-cookiecutter-template
+    cookiecutter gh:raywenderlich/kodeco-android-cookiecutter-template
     ````
 1. Via cloning this repository
 
-    - using `https`
+   - using `https`
 
-        ```bash
-        git clone https://github.com/raywenderlich/rw-android-cookiecutter-template
-        ```
+       ```bash
+       git clone https://github.com/raywenderlich/kodeco-android-cookiecutter-template
+       ```
 
-    - using `ssh`
-        ```bash
-        git clone git@github.com:raywenderlich/rw-android-cookiecutter-template.git
-        ```
+   - using `ssh`
+       ```bash
+       git clone git@github.com:raywenderlich/kodeco-android-cookiecutter-template.git
+       ```
 
-    When done, run `cookiecutter` tool by passing in the template directory as an argument:
+   When done, run `cookiecutter` tool by passing in the template directory as an argument:
 
     ```bash
-    cookiecutter rw-android-cookiecutter-template/
+    cookiecutter kodeco-android-cookiecutter-template/
     ```
 #### Step 3
 
@@ -52,7 +52,7 @@ The process would look something like below:
 ## License
 
 ```
-Copyright (c) 2020 Razeware LLC
+Copyright (c) 2020 Kodeco LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

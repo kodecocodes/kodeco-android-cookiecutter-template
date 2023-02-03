@@ -1,7 +1,7 @@
 {  
     "example_name": "Android Tutorial",
     "repo_name": "{{ cookiecutter.example_name | title | replace(' ', '') }}",
-    "full_package_namespace": "com.kodeco.android.{{ cookiecutter.example_name | lower | replace(' ', '') }}",
+    "full_package_namespace": "com.yourcompany.android.{{ cookiecutter.example_name | lower | replace(' ', '') }}",
     "package_path": "{{ cookiecutter.repo_name | lower }}",
 
     "_copy_without_render": [

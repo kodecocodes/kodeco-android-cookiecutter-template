@@ -1,7 +1,7 @@
 <resources>
 
   <!-- Base application Theme -->
-  <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+  <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
     <!-- Customize your theme here. -->
     <item name="colorPrimary">@color/colorPrimary</item>
     <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -11,7 +11,7 @@
   <!-- Splash Screen Theme-->
   <style name="SplashTheme" parent="Theme.SplashScreen">
     <item name="windowSplashScreenBackground">@color/colorOnPrimary</item>
-    <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon</item>
+    <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
     <item name="postSplashScreenTheme">@style/AppTheme</item>
   </style>
 

@@ -35,22 +35,78 @@
 package {{ cookiecutter.full_package_namespace }}
 
 import android.os.Bundle
+import android.widget.Toast
+import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Info
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
+import {{ cookiecutter.full_package_namespace }}.theme.AppTheme
 
 /**
  * Main Screen
  */
 class MainActivity : AppCompatActivity() {
 
+
   override fun onCreate(savedInstanceState: Bundle?) {
     // Switch to AppTheme for displaying the activity
     setTheme(R.style.AppTheme)
 
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
+    setContent { MainScreen() }
 
     // Your code
+  }
+
+  @Preview
+  @Composable
+  @OptIn(ExperimentalMaterial3Api::class)
+  fun MainScreen() {
+    AppTheme {
+      Scaffold(
+          topBar = { TopBar(onInfoClick = ::onInfoClick) },
+          content = { padding -> MainContent(padding) },
+      )
+    }
+  }
+
+  @OptIn(ExperimentalMaterial3Api::class)
+  @Composable
+  fun TopBar(onInfoClick: () -> Unit) {
+    TopAppBar(
+        title = { Text(stringResource(id = R.string.app_name)) },
+        actions = {
+          IconButton(onClick = onInfoClick) {
+            Icon(Icons.Default.Info, "")
+          }
+        }
+    )
+  }
 
 
+  @Composable
+  fun MainContent(padding: PaddingValues) {
+    Box(modifier = Modifier.padding(padding).fillMaxSize()) {
+      Text(text = "Hello World!", modifier = Modifier.align(Alignment.Center))
+    }
+  }
+
+  private fun onInfoClick() {
+    Toast.makeText(this, "This is an example action", Toast.LENGTH_SHORT).show()
   }
 }

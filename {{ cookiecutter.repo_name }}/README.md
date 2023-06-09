@@ -1,4 +1,4 @@
-# {{ cookiecutter.example_name }}
+# Android Tutorial
 
 Sample Android app
 

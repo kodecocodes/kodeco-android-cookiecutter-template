@@ -52,6 +52,6 @@ class ExampleInstrumentedTest {
   fun useAppContext() {
     // Context of the app under test.
     val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-    assertEquals("{{ cookiecutter.full_package_namespace }}", appContext.packageName)
+    assertEquals("com.yourcompany.android.androidtutorial", appContext.packageName)
   }
 }

@@ -20,19 +20,19 @@ Assuming you have `git` installed, there are two ways you can setup/configure th
 
    Simply execute the below one-liner command in your terminal.
     ```
-    cookiecutter gh:raywenderlich/kodeco-android-cookiecutter-template
+    cookiecutter gh:kodecocodes/kodeco-android-cookiecutter-template
     ````
 1. Via cloning this repository
 
    - using `https`
 
        ```bash
-       git clone https://github.com/raywenderlich/kodeco-android-cookiecutter-template
+       git clone https://github.com/kodecocodes/kodeco-android-cookiecutter-template
        ```
 
    - using `ssh`
        ```bash
-       git clone git@github.com:raywenderlich/kodeco-android-cookiecutter-template.git
+       git clone git@github.com:kodecocodes/kodeco-android-cookiecutter-template.git
        ```
 
    When done, run `cookiecutter` tool by passing in the template directory as an argument:
@@ -52,7 +52,7 @@ The process would look something like below:
 ## License
 
 ```
-Copyright (c) 2020 Kodeco LLC
+Copyright (c) 2024 Kodeco Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
